@@ -3,5 +3,5 @@ if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile/i.test(navigator.userAge
 
 }
 else {
-  window.location = "/error.html";
+  window.location = "/ypxpsar28vmft9ce/error.html";
 }
