@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Noobs Code</title>
+  <link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.0/css/line.css'>
+<link rel='stylesheet' href='https://unicons.iconscout.com/release/v3.0.0/css/solid.css'>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<main class="flexbox-col">
+
+  <div class="form-wrapper">
+    <form>
+      <center>
+      <h3 class="form-title">Noobs Code</h3>
+      <p class="form-undertitle">Order ID could not be found.</p>
+    </center>
+      <div class="form-input-grid">
+        <div>
+        <div class="form-input-wrapper flexbox-left">
+          <i class="uil uil-archive"></i>
+          <input class="form-input" id="orderid" name="orderid" type="text" onkeypress="return noenter()" placeholder="Order ID" aria-label="" required>
+        </div>
+        <h1></h1>
+        <input type="button" class="button btn-primary" onkeypress="return noenter()" value="Submit" OnClick="buttonClick()"/>
+
+      </div>
+    </div>
+
+   </form>
+  </div>
+
+</main>
+<!-- partial -->
+  <script src='https://code.jquery.com/jquery-3.5.1.js'></script>
+<script src='https://code.jquery.com/ui/1.12.1/jquery-ui.js'></script>
+<script src='https://unicons.iconscout.com/release/v3.0.0/script/monochrome/bundle.js'></script>
+<script language="javascript" type="text/javascript">
+    function buttonClick(){
+    var url = document.getElementById("orderid").value;
+    window.location = "order/" + url;
+    }
+</script>
+<script type="text/javascript">
+function noenter() {
+  return !(window.event && window.event.keyCode == 13); }
+</script>
+<script src="order/noallow.js"></script>
+</body>
+</html>
